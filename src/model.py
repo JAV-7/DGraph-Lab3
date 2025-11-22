@@ -2,7 +2,7 @@
 @file: model.py
 @author: Francisco Javier Ramos Jimenez.
 @date: 23/11/2025.
-@description: ...
+@description: file defining model behaviour.
 """
 
 #!/usr/bin/env python3
@@ -14,8 +14,10 @@ import csv
 import os
 import traceback
 
+ """
+ Parse a Dgraph query JSON string and return the first uid for `key`, or None.
+ """
 def _first_uid_from_query(json_str: str, key: str):
-    """Parse a Dgraph query JSON string and return the first uid for `key`, or None."""
     try:
         data = json.loads(json_str)
         items = data.get(key, [])
