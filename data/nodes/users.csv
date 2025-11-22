@@ -1,0 +1,4 @@
+username,email,location.lat,location.long
+Alice,alice@example.com,40.7128,-74.006
+Bob,bob@example.com,34.0522,-118.2437
+Carol,carol@example.com,51.5074,-0.1278
